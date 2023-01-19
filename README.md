@@ -26,6 +26,7 @@ This mod is for Change the settings.json filename  in Build for WebGL.
 1. Window -> PackageManager -> Addressables -> Remove ( or project_name/PackageCache/com.unity.addressables@1.19.19)
 2. copy this mod into project_name/Packages/addressables/
 3. Restart Unity
+4. If Addressables not found , you can add it from disk : Package Manager -> Add package from disk
  
 
 
