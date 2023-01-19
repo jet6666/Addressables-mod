@@ -18,15 +18,7 @@ This mod is for Change the settings.json filename  in Build for WebGL.
 
 # Addressables 版本：
 1. Addressables Version 1.19.19 - March 04, 2022
-
-
-# How to custom 
-
-1. # Addressables-mod
-
-±¾°æ±¾ÊÇ½â¾öWebGLÏÂ¼ÓÔØStreamingAssets\aa\settings.json ÎÄ¼þÃûÃ»ÓÐhashµ¼ÖÂcdn»á»º´æµÄÎÊÌâ
-
-This mod is for Change the settings.json filename  in Build for WebGL.
+ 
 
 
 # How to use 
@@ -34,10 +26,7 @@ This mod is for Change the settings.json filename  in Build for WebGL.
 1. Window -> PackageManager -> Addressables -> Remove ( or project_name/PackageCache/com.unity.addressables@1.19.19)
 2. copy this mod into project_name/Packages/addressables/
 3. Restart Unity
-
-
-# Addressables °æ±¾£º
-1. Addressables Version 1.19.19 - March 04, 2022
+ 
 
 
 # How to custom 
