@@ -46,12 +46,6 @@ This mod is for Change the settings.json filename  in Build for WebGL.
 
 
 
-# Links
-
-1. [¡¾Unity Addressables¡¿AddressablesÔ´ÂëÒÆÖ²ÓÅ»¯(Ò»)](https://www.cnblogs.com/lovewaits/p/14817252.html)
-2. 
-
-
 
 # Links
 
