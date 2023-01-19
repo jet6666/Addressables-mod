@@ -370,7 +370,18 @@ namespace UnityEditor.AddressableAssets.Build.DataBuilders
                 m_Linker.Save(Addressables.BuildPath + "/AddressablesLink/link.xml");
             }
             
-            var settingsPath = Addressables.BuildPath + "/" + builderInput.RuntimeSettingsFilename;
+             //jet 
+            var now = DateTime.Now;
+            var versionTxt =  string.Format("{0:D4}-{1:D2}-{2:D2}.{3:D2}.{4:D2}.{5:D2}", now.Year, now.Month, now.Day, now.Hour, now.Minute, now.Second);
+
+            TextAsset settingVerionTxt = (TextAsset)Resources.Load("settings_version");
+            var settingsVersionTxtPath = Application.dataPath+ "/Resources/" + "settings_version.txt";
+            WriteFile(settingsVersionTxtPath, versionTxt, builderInput.Registry);
+
+            var settingFileName = builderInput.RuntimeSettingsFilename;
+            settingFileName = "settings_" + versionTxt + ".json";
+
+            var settingsPath = Addressables.BuildPath + "/" + settingFileName;
             
             using (m_Log.ScopedStep(LogLevel.Info, "Generate Settings"))
                 WriteFile(settingsPath, JsonUtility.ToJson(aaContext.runtimeData), builderInput.Registry);

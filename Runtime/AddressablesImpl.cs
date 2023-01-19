@@ -470,11 +470,14 @@ namespace UnityEngine.AddressableAssets
 
         public AsyncOperationHandle<IResourceLocator> InitializeAsync()
         {
+        	  //jet
+        	  TextAsset settingVerionTxt = (TextAsset)Resources.Load("settings_version");
             var settingsPath =
 #if UNITY_EDITOR
                 PlayerPrefs.GetString(Addressables.kAddressablesRuntimeDataPath, RuntimePath + "/settings.json");
 #else
-                RuntimePath + "/settings.json";
+               // RuntimePath + "/settings.json";
+                 RuntimePath + "/settings_"+settingVerionTxt.text+".json";
 #endif
 
             return InitializeAsync(ResolveInternalId(settingsPath));
